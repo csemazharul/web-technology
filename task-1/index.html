@@ -1,109 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Task-1</title>
   <style>
-    .main{
-       width: 960px;
-      /* width: 100%; */
+    .main {
+      /* width: 960px;
      
-       margin: 35px auto; 
+      margin: 35px auto;  */
     }
-    .header{
+
+    .header {
       background-color: #CEFCFC;
       min-height: 400px;
+      padding: 0px 20px 0px 22px;
     }
-    .nav{
+
+    .nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 10px;
-  
+
     }
-    .nav ul{
+
+    .nav ul {
       display: flex;
       list-style: none;
     }
-    .nav ul li{
+
+    .nav ul li {
       padding: 0 10px;
     }
-    .nav ul li a{
+
+    .nav ul li a {
       text-decoration: none;
       color: white;
-      padding:  4px 10px 4px 9px;
-      border-radius:15px;
-      background-color:#AE6ED8;
+      padding: 4px 10px 4px 9px;
+      border-radius: 15px;
+      background-color: #AE6ED8;
     }
-    .header-content{
+
+    .header-content {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 10px;
+      /* padding:0px 20px 0px 22px; */
     }
 
-    .btn{
+    .btn {
       text-decoration: none;
       color: white;
-      padding:  4px 10px 4px 9px;
-      border-radius:15px;
-      background-color:#AE6ED8;
-      border:none;
+      padding: 4px 10px 4px 9px;
+      border-radius: 15px;
+      background-color: #AE6ED8;
+      border: none;
     }
-    .about-us{
+
+    .about-us {
       background-color: #EBF8FF;
       min-height: 400px;
       display: flex;
-      width: 100%;
+      max-width: 100%;
+      padding: 10px 20px 0px 22px;
     }
-    .image{
+
+    .image {
       width: 50%;
     }
-    .text{
+
+    .text {
       width: 50%;
       padding: 20px;
     }
- 
+    .card{
+      /* display: flex;
+      justify-content: space-between; */
+      align-items: center;
+      border:1px solid aliceblue; 
+      border-radius: 35px;
+      padding: 10px;
+      box-shadow:2px 6px 13px 0px rgba(0, 0, 0, 0.75);
+    }
+    .card img{
+      /* width: 50%; */
+    }
+    .card-section{
+      background-color: #EBF8FF;
+      min-height: 400px;
+      display: flex;
+      max-width: 100%;
+      padding: 10px 20px 0px 22px;
+      /* padding: 10px 20px 0px 22px; */
+    }
   </style>
 </head>
-<body>
-    <div class="main">
-      <div class="header">
-          <div class="nav">
-            <ul>
-              <li><a href="#">Recipies</a></li>
-              <li><a href="#">Shops</a></li>
-              <li><a href="#">Login</a></li>
-              <li><a href="">Sign Up</a></li>
-               <li><a href="#">About Us</a></li></ul>
-          </div>
-          <div class="header-content">
-           <div class="header-content-text">
-             <span>Be Like Popeye
-             Just Eat Healthy
-             with Popeye Food Network</span>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
-              <button class="btn">Order Spinach</button>
-            </div>
-          <div class="logo">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2NqVETTVtA7k7DuQyBO0bQHmyV_4IoCAR-Q&usqp=CAU" alt=""/>
-          </div>
-      </div>
-      <div class="footer">
 
+<body>
+  <div class="main">
+    <div class="header">
+      <div class="nav">
+        <ul>
+          <li><a href="#">Recipies</a></li>
+          <li><a href="#">Shops</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="">Sign Up</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
       </div>
-   
-   <div class="about-us">
-        <div class="image">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2NqVETTVtA7k7DuQyBO0bQHmyV_4IoCAR-Q&usqp=CAU" alt=""/>
+      <div class="header-content">
+        <div class="header-content-text">
+          <span>Be Like Popeye
+            Just Eat Healthy
+            with Popeye Food Network</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+          <button class="btn">Order Spinach</button>
         </div>
-        <div class="text">
-          <h3>About Me</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec feugiat velit. Cras accumsan pulvinar est non varius. In at nulla consequat, auctor est a, semper tortor. Pellentesque eu sagittis neque. Praesent pulvinar, quam vel porta scelerisque, erat nibh auctor sem, sit amet sodales quam odio ut arcu. Phasellus tincidunt, justo mollis elementum molestie</p>
-          <button class="btn">Contact Me</button>
-          </div>
+        <div class="logo">
+          <img src="images/images-removebg-preview.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+
+    </div>
+
+    <div class="about-us">
+      <div class="image">
+        <img src="images/images-removebg-preview.png" alt="" />
+      </div>
+      <div class="text">
+        <h3>About Me</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec feugiat velit. Cras accumsan pulvinar est
+          non varius. In at nulla consequat, auctor est a, semper tortor. Pellentesque eu sagittis neque. Praesent
+          pulvinar, quam vel porta scelerisque, erat nibh auctor sem, sit amet sodales quam odio ut arcu. Phasellus
+          tincidunt, justo mollis elementum molestie</p>
+        <button class="btn">Contact Me</button>
+      </div>
+    </div>
+    <div class="receipe-menu">
+      <h3>Bluto's Recipies</h3>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <div class="card-section" id="">
+        <div class="card">
+          <img src="images/images-removebg-preview.png" alt="" />
+          <h4>Spinach</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+        </div>
+        <div class="card" style="margin:0px 50px 0px 50px">
+          <img src="images/images-removebg-preview.png" alt="" />
+          <h4>Spinach</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+        </div>
+        <div class="card">
+          <img src="images/images-removebg-preview.png" alt="" />
+          <h4>Spinach</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+        </div>
+      </div>
     </div>
 </body>
+
 </html>
