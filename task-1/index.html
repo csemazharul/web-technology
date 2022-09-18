@@ -7,12 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Task-1</title>
   <style>
-    .main {
-      /* width: 960px;
-     
-      margin: 35px auto;  */
-    }
-
     .header {
       background-color: #CEFCFC;
       min-height: 400px;
@@ -39,9 +33,12 @@
     .nav ul li a {
       text-decoration: none;
       color: white;
-      padding: 4px 10px 4px 9px;
+      padding: 5px 12px 5px 12px;
+
       border-radius: 15px;
-      background-color: #AE6ED8;
+      background-color: #801FC3;
+      
+      
     }
 
     .header-content {
@@ -55,9 +52,9 @@
     .btn {
       text-decoration: none;
       color: white;
-      padding: 4px 10px 4px 9px;
+      padding: 5px 12px 5px 12px;
       border-radius: 15px;
-      background-color: #AE6ED8;
+      background-color: #801FC3;
       border: none;
     }
 
@@ -73,85 +70,130 @@
       width: 50%;
     }
 
-    .text {
+    .about-me {
       width: 50%;
       padding: 20px;
     }
-    .card{
-      /* display: flex;
-      justify-content: space-between; */
+
+    .card {
       align-items: center;
-      border:1px solid aliceblue; 
+      border: 1px solid aliceblue;
       border-radius: 35px;
       padding: 10px;
-      box-shadow:2px 6px 13px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 2px 6px 13px 0px rgba(0, 0, 0, 0.75);
+      max-width: 20%;
+      margin: 5px 100px;
     }
-    .card img{
-      /* width: 50%; */
+    .video-container{
+      display: flex;
+    max-width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:33px 113px 5px 113px;
+    border: none;
+    border-radius: 9px;
+    box-shadow: 2px 6px 13px 0px rgba(0, 0, 0, 0.75);
+    max-height: 300px;
     }
-    .card-section{
-      background-color: #EBF8FF;
+    .card img {
+      border-radius: 9px;
+      box-shadow: 0px 0px 1px 1px;
+      margin: 19px 8px 0px 18px;
+    }
+
+    .card-section {
       min-height: 400px;
       display: flex;
       max-width: 100%;
-      padding: 10px 20px 0px 22px;
-      /* padding: 10px 20px 0px 22px; */
+      justify-content: center;
+      flex-wrap: wrap;]
+    }
+
+    .receipe-menu {
+      background: FFFFFF;
+    }
+
+    .recipe-item {
+      padding: 0px 150px 0px 150px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .footer{
+      display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #141313;
+    margin-top: 23px;
+    }
+    .video-container, .content{
+      display: flex;
+    }
+    .img-1{
+      margin-left:52px
     }
   </style>
 </head>
 
 <body>
   <div class="main">
-    <div class="header">
+    <section class="header">
       <div class="nav">
         <ul>
           <li><a href="#">Recipies</a></li>
           <li><a href="#">Shops</a></li>
           <li><a href="#">Login</a></li>
-          <li><a href="">Sign Up</a></li>
+          <li><a href="#">Sign Up</a></li>
           <li><a href="#">About Us</a></li>
         </ul>
       </div>
-      <div class="header-content">
+      <div class="header-content" style="margin: auto 40px">
         <div class="header-content-text">
-          <span>Be Like Popeye
-            Just Eat Healthy
-            with Popeye Food Network</span>
+          <aside style="font-size: 30px;
+          font-weight: bold;">Be Like <a href="" style="text-decoration: none;">Popeye</a> <br/>
+            Just Eat Healthy <br/>
+            with Popeye Food Network</aside>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
           <button class="btn">Order Spinach</button>
         </div>
         <div class="logo">
-          <img src="images/images-removebg-preview.png" alt="" />
+          <img src="images/images-removebg-preview.png" style="margin-right:40px" alt="" />
         </div>
       </div>
-    </div>
-    <div class="footer">
-
-    </div>
-
-    <div class="about-us">
+    </section>
+    <section class="about-us">
       <div class="image">
-        <img src="images/images-removebg-preview.png" alt="" />
+        <img src="images/images-removebg-preview.png" style="margin-left: 50px;
+        margin-top: 38px;" alt="" />
       </div>
-      <div class="text">
+      <div class="about-me">
         <h3>About Me</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec feugiat velit. Cras accumsan pulvinar est
-          non varius. In at nulla consequat, auctor est a, semper tortor. Pellentesque eu sagittis neque. Praesent
-          pulvinar, quam vel porta scelerisque, erat nibh auctor sem, sit amet sodales quam odio ut arcu. Phasellus
-          tincidunt, justo mollis elementum molestie</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+          Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+          PageMaker including versions of Lorem Ipsum.</p>
         <button class="btn">Contact Me</button>
       </div>
-    </div>
-    <div class="receipe-menu">
-      <h3>Bluto's Recipies</h3>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-      <div class="card-section" id="">
+    </section>
+    <section class="receipe-menu">
+      <div class="recipe-item">
+        <h2>Bluto's Recipies</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+          Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+          PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+      <div class="card-section">
         <div class="card">
           <img src="images/images-removebg-preview.png" alt="" />
           <h4>Spinach</h4>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
         </div>
-        <div class="card" style="margin:0px 50px 0px 50px">
+        <div class="card" style="margin-left: 20px; margin-right:20px">
           <img src="images/images-removebg-preview.png" alt="" />
           <h4>Spinach</h4>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
@@ -162,7 +204,32 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
         </div>
       </div>
-    </div>
+      <div class="video-container">
+        <div class="video" style="margin-right:70px">
+          <iframe width="500px" height="200px" style="padding:8px 0px" src="https://www.youtube.com/embed/bW0smEIYLeM" title="Bangladesh Legends vs New Zealand Legends | Full Match Highlights |Skyexch RSWS S2 | Colors Cineplex" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+    
+        </div>
+        <div class="content">
+          <div class="">
+            <h3>1.4 m</h2>
+            <p>Youtube Views</p>
+            <h3>500K</h2>
+            <p>Instagram Followers</p>
+          </div>
+          <div class="img-1">
+            <img src="images/images-removebg-preview.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <p style="color:white;letter-spacing:2px">&copy; 2022 <a href="http://abc.com\">PoPeyE</a> Food Network</p>
+    </footer>
+  </div>
+
 </body>
 
 </html>
