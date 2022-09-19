@@ -1,244 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1</title>
+    <style>
+      body {
+        background: #CEFCFC;
+      }
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Task-1</title>
-  <style>
-    body{
-      background:#CEFCFC;
-    }
-    .header {
-      background-color: #CEFCFC;
-      min-height: 400px;
-      padding: 0px 20px 0px 22px;
-    }
+      .header {
+        background-color: #CEFCFC;
+        min-height: 400px;
+        padding: 0px 20px 0px 22px;
+      }
 
-    .nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
 
-    }
+      .nav ul {
+        display: flex;
+        list-style: none;
+      }
 
-    .nav ul {
-      display: flex;
-      list-style: none;
-    }
+      .nav ul li {
+        padding: 0 10px;
+      }
 
-    .nav ul li {
-      padding: 0 10px;
-    }
+      .nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 5px 12px 5px 12px;
+        border-radius: 15px;
+        background-color: #801FC3;
+      }
 
-    .nav ul li a {
-      text-decoration: none;
-      color: white;
-      padding: 5px 12px 5px 12px;
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        /* padding:0px 20px 0px 22px; */
+      }
 
-      border-radius: 15px;
-      background-color: #801FC3;
-      
-      
-    }
+      .btn {
+        text-decoration: none;
+        color: white;
+        padding: 5px 12px 5px 12px;
+        border-radius: 15px;
+        background-color: #801FC3;
+        border: none;
+      }
 
-    .header-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
-      /* padding:0px 20px 0px 22px; */
-    }
+      .about-us {
+        background-color: #EBF8FF;
+        min-height: 400px;
+        display: flex;
+        max-width: 100%;
+        padding: 10px 20px 0px 22px;
+      }
 
-    .btn {
-      text-decoration: none;
-      color: white;
-      padding: 5px 12px 5px 12px;
-      border-radius: 15px;
-      background-color: #801FC3;
-      border: none;
-    }
+      .image {
+        width: 50%;
+      }
 
-    .about-us {
-      background-color: #EBF8FF;
-      min-height: 400px;
-      display: flex;
-      max-width: 100%;
-      padding: 10px 20px 0px 22px;
-    }
+      .about-me {
+        width: 50%;
+        padding: 20px;
+      }
 
-    .image {
-      width: 50%;
-    }
+      .card {
+        align-items: center;
+        border: 1px solid aliceblue;
+        border-radius: 35px;
+        padding: 10px;
+        box-shadow: 2px 6px 13px 0px rgba(0, 0, 0, 0.75);
+        max-width: 20%;
+        margin: 5px 100px;
+      }
 
-    .about-me {
-      width: 50%;
-      padding: 20px;
-    }
+      .video-container {
+        display: flex;
+        max-width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 33px 113px 5px 113px;
+        border: none;
+        border-radius: 9px;
+        box-shadow: 2px 6px 13px 0px rgba(0, 0, 0, 0.75);
+        max-height: 300px;
+      }
 
-    .card {
-      align-items: center;
-      border: 1px solid aliceblue;
-      border-radius: 35px;
-      padding: 10px;
-      box-shadow: 2px 6px 13px 0px rgba(0, 0, 0, 0.75);
-      max-width: 20%;
-      margin: 5px 100px;
-    }
-    .video-container{
-      display: flex;
-    max-width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin:33px 113px 5px 113px;
-    border: none;
-    border-radius: 9px;
-    box-shadow: 2px 6px 13px 0px rgba(0, 0, 0, 0.75);
-    max-height: 300px;
-   
-    }
-    .card img {
-      border-radius: 9px;
-      box-shadow: 0px 0px 1px 1px;
-      margin: 19px 8px 0px 18px;
-      width:224px;
-      height: 150px;
-    }
+      .card img {
+        border-radius: 9px;
+        box-shadow: 0px 0px 1px 1px;
+        margin: 19px 8px 0px 18px;
+        width: 224px;
+        height: 150px;
+      }
 
-    .card-section {
-      min-height: 400px;
-      display: flex;
-      max-width: 100%;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
+      .card-section {
+        min-height: 400px;
+        display: flex;
+        max-width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
 
-    .receipe-menu {
-      background: white;
-    }
+      .receipe-menu {
+        background: white;
+      }
 
-    .recipe-item {
-      padding: 0px 150px 0px 150px;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    .footer{
-      display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background: #141313;
-    margin-top: 23px;
-    }
-    .video-container, .content{
-      display: flex;
-    }
-    .img-1{
-      margin-left:52px
-    }
-    .ml-17{
-      margin-left: 17px;
-    }
-  </style>
-</head>
+      .recipe-item {
+        padding: 0px 150px 0px 150px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
 
-<body>
-  <div class="main">
-    <section class="header">
-      <div class="nav">
-        <ul>
-          <li><a href="#">Recipies</a></li>
-          <li><a href="#">Shops</a></li>
-          <li><a href="#">Login</a></li>
-          <li><a href="#">Sign Up</a></li>
-          <li><a href="#">About Us</a></li>
-        </ul>
-      </div>
-      <div class="header-content" style="margin: auto 40px">
-        <div class="header-content-text">
-          <aside style="font-size: 30px;
-          font-weight: bold;">Be Like <a href="" style="text-decoration: none;">Popeye</a> <br/>
-            Just Eat Healthy <br/>
-            with Popeye Food Network</aside>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
-          <button class="btn">Order Spinach</button>
+      .footer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background: #141313;
+        margin-top: 23px;
+      }
+
+      .video-container,
+      .content {
+        display: flex;
+      }
+
+      .img-1 {
+        margin-left: 52px
+      }
+
+      .ml-17 {
+        margin-left: 17px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <section class="header">
+        <div class="nav">
+          <ul>
+            <li>
+              <a href="#">Recipies</a>
+            </li>
+            <li>
+              <a href="#">Shops</a>
+            </li>
+            <li>
+              <a href="#">Login</a>
+            </li>
+            <li>
+              <a href="#">Sign Up</a>
+            </li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+          </ul>
         </div>
-        <div class="logo">
-          <img src="images/4.png" style="margin-right:40px" alt="" />
+        <div class="header-content" style="margin: auto 40px">
+          <div class="header-content-text">
+            <aside style="font-size: 30px;
+          font-weight: bold;">Be Like <a href="" style="text-decoration: none;">Popeye</a>
+              <br /> Just Eat Healthy <br /> with Popeye Food Network
+            </aside>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+            <button class="btn">Order Spinach</button>
+          </div>
+          <div class="logo">
+            <img src="images/4.png" style="margin-right:40px" alt="" />
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="about-us">
-      <div class="image">
-        <img src="images/images-removebg-preview.png" style="margin-left: 50px;
+      </section>
+      <section class="about-us">
+        <div class="image">
+          <img src="images/images-removebg-preview.png" style="margin-left: 50px;
         margin-top: 38px;" alt="" />
-      </div>
-      <div class="about-me">
-        <h3>About Me</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-          electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-          Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-          PageMaker including versions of Lorem Ipsum.</p>
-        <button class="btn">Contact Me</button>
-      </div>
-    </section>
-    <section class="receipe-menu">
-      <div class="recipe-item">
-        <h2>Bluto's Recipies</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-          electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-          Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-          PageMaker including versions of Lorem Ipsum.</p>
-      </div>
-      <div class="card-section">
-        <div class="card">
-          <img src="images/1.jpg" alt="" />
-          <h4 class="ml-17">Spinach</h4>
-          <p class="ml-17">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
         </div>
-        <div class="card" style="margin-left: 20px; margin-right:20px">
-          <img src="images/2.webp" alt="" />
-          <h4 class="ml-17">Spinach</h4>
-          <p class="ml-17">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+        <div class="about-me">
+          <h3>About Me</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <button class="btn">Contact Me</button>
         </div>
-        <div class="card">
-          <img src="images/3.jpg" alt="" />
-          <h4 class="ml-17">Spinach</h4>
-          <p class="ml-17">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+      </section>
+      <section class="receipe-menu">
+        <div class="recipe-item">
+          <h2>Bluto's Recipies</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
-      </div>
-      <div class="video-container">
-        <div class="video" style="margin-right:70px">
-          <iframe width="500px" height="200px" style="padding:8px 0px" src="https://www.youtube.com/embed/bW0smEIYLeM" title="Bangladesh Legends vs New Zealand Legends | Full Match Highlights |Skyexch RSWS S2 | Colors Cineplex" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-
-    
-        </div>
-        <div class="content">
-          <div class="">
-            <h3>1.4 m</h2>
-            <p>Youtube Views</p>
-            <h3>500K</h2>
-            <p>Instagram Followers</p>
+        <div class="card-section">
+          <div class="card">
+            <img src="images/1.jpg" alt="" />
+            <h4 class="ml-17">Spinach</h4>
+            <p class="ml-17">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
           </div>
-          <div class="img-1">
-            <img src="images/images-removebg-preview.png" alt="" />
+          <div class="card" style="margin-left: 20px; margin-right:20px">
+            <img src="images/2.webp" alt="" />
+            <h4 class="ml-17">Spinach</h4>
+            <p class="ml-17">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+          </div>
+          <div class="card">
+            <img src="images/3.jpg" alt="" />
+            <h4 class="ml-17">Spinach</h4>
+            <p class="ml-17">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
           </div>
         </div>
-      </div>
-    </section>
-    <footer class="footer">
-      <p style="color:white;letter-spacing:2px">&copy; 2022 <a href="http://abc.com\">PoPeyE</a> Food Network</p>
-    </footer>
-  </div>
-
-</body>
-
+        <div class="video-container">
+          <div class="video" style="margin-right:70px">
+            <iframe width="500px" height="200px" style="padding:8px 0px" src="https://www.youtube.com/embed/bW0smEIYLeM" title="Bangladesh Legends vs New Zealand Legends | Full Match Highlights |Skyexch RSWS S2 | Colors Cineplex" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="content">
+            <div class="">
+              <h3>1.4 m </h2>
+                <p>Youtube Views</p>
+                <h3>500K </h2>
+                  <p>Instagram Followers</p>
+            </div>
+            <div class="img-1">
+              <img src="images/images-removebg-preview.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <p style="color:white;letter-spacing:2px">&copy; 2022 <a href="http://abc.com\">PoPeyE</a> Food Network </p>
+      </footer>
+    </div>
+  </body>
 </html>
